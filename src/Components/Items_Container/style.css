@@ -1,0 +1,141 @@
+.item-main-container{
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 19px -2px rgba(133,133,133,1);
+    border-radius: 0px 0px 0px 0px;
+    flex-direction: column;
+    position: relative;
+}
+
+.heading-view-all-btn-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-heading-text{
+    padding: 10px;
+    padding-left: 25px;
+    font-size: 22px;
+    font-weight: 552;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.view-all-btn-container{
+    padding: 20px;
+}
+
+.item-card-view-all-btn{
+    border-radius: 3px 3px 3px 3px;
+    font-weight: 600;
+    font-size: 12px;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #2874F0;
+    color: white;
+    border: 0px none #000000;
+    cursor: pointer;
+}
+
+.item-card-view-all-btn:focus{
+    outline: none;
+}
+
+.item-image-container{
+    width: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.item-image-container img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.item-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 14px;
+    text-align: center;
+    flex: 1;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.item-card:focus{
+    outline: none;
+}
+
+.item-card div{
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.item-title-text{
+    font-weight: 600;
+}
+
+.item-description-text-1{
+    color: green;
+}
+
+.item-description-text-2{
+    font-weight: 400;
+    color: rgb(92, 92, 92);
+}
+
+.rec-swipable{
+    place-items: flex-end;
+}
+
+button.rec-dot{
+    display: none;
+}
+
+.rec.rec-arrow{
+    background-color: white;
+    color: black;
+    height: 100px;
+    user-select: none;
+}
+
+
+button.rec-arrow-left{
+    border-radius: 0 3px 3px 0;
+    box-shadow: -35px 5px 87px -1px rgba(31, 31, 31, 0.75);
+}
+
+button.rec-arrow-left:hover, button.rec-arrow-left:hover:enabled, button.rec-arrow-left:focus:enabled{
+    box-shadow: -35px 5px 87px -1px rgba(0, 0, 0, 0.75);
+}
+
+button.rec-arrow-right{
+    border-radius: 3px 0 0 3px;
+    box-shadow: 35px 5px 87px -1px rgba(31, 31, 31, 0.75);
+}
+
+button.rec.rec-arrow-right:hover, button.rec.rec-arrow-right:hover:enabled, button.rec.rec-arrow-right:focus:enabled{
+    box-shadow: 35px 5px 87px -1px rgba(0,0,0,0.75);
+}
+
+button.rec.rec-arrow:hover{
+    background-color: white;
+    color: black;
+}
+
+button.rec.rec-arrow:hover:enabled{
+    background-color: white;
+    color: black;
+}
+
+button.rec.rec-arrow:focus:enabled{
+    background-color: white;
+    color: black;
+}
+
+.rec.rec-arrow:disabled {
+    visibility: hidden;
+}
+
+  

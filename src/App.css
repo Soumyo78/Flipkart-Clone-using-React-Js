@@ -1,38 +1,241 @@
-.App {
-  text-align: center;
-}
+/* https://www.w3schools.com/code/tryit.asp?filename=GMFG14053HFP */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main-container{
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+
+.title-logo-searchbar-container{
+  display: flex;
+  background-color: #2874F0;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+#title-logo{
+  padding: 10px;
+}
+
+.search-box-container{
+  width: 500px;
+  display: flex;
+}
+
+#search-input-box{
+  height: 29.6333px;
+  border-radius: 1px 0px 0px 1px;
+  border: 0px none #000000;
+  padding-left: 10px;
+  font-size: 14px;
+  flex: 1;
+  width: 100%;
+}
+
+.input-search-btn-container{
+  display: flex;
+  margin: 10px;
+}
+
+#search-input-box:focus, #search-btn:focus, #login-btn:focus{
+  outline: none;
+}
+
+.btn-container{
+  height: 31.63px;
+  background-color: white;
+  border-radius: 0px 1px 1px 0px;
+}
+
+#search-btn{
+  padding: 5px;
+  width: 20px;
+  background-color: white;
+}
+
+.login-more-cart-container{
+  display: flex;
+  justify-content: space-around;
+}
+
+.login-btn-container{
+  display: flex;
+  padding-left: 70px;
+}
+
+#login-btn{
+  border-radius: 0px 0px 0px 0px;
+  font-weight: 800;
+  font-size: 16px;
+  padding: 3px;
+  padding-left: 35px;
+  padding-right: 35px;
+  background-color: white;
+  color: #2874F0;
+  border: 0px none #000000;
+  cursor: pointer;
+}
+
+.login-dropdown-content{
+  visibility: hidden;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width:230px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  border-radius: 0px 0px 4px 4px;
+  z-index: 1;
+  margin-top: 42px;
+  transition: visibility 0.2s, opacity 2s;
+}
+
+.a-list-items{
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+#new-customer-text{
+  color: black;
+  padding: 12px 16px;
+  display: flex;
+  font-weight: normal;
+  font-size: 14px;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+#dropdown-sign-up-text{
+  text-decoration: none;
+  color: #2874F0;
+}
+
+#dropdown-sign-up-text:hover{
+  text-decoration: underline;
+}
+
+.a-list-items:hover{
+  background-color: #DBDBDB;
+}
+
+.login-btn-container:hover .login-dropdown-content {
+  visibility: visible;
+}
+
+.more-container, .cart-container{
+  padding-left: 50px;
+  padding-top: 10px;
   color: white;
+  display: flex;
+  font-family: Roboto,Arial,sans-serif;
+  font-weight: 700;
 }
 
-.App-link {
-  color: #61dafb;
+.more-container a, .cart-container a{
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.more-text span{
+  position: absolute;
+  font-size: 8px;
+  margin-left: 5px;
+  margin-top: 3px;
+  font-weight: 600;
+}
+
+.more-text:hover > span{
+  transform: rotate(180deg);
+}
+
+#cart-icon{
+  padding-right: 3px;
+}
+
+.content-body-container{
+  padding: 10px;
+}
+
+.more-container {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.more-dropdown-content {
+  visibility: hidden;
+  position: absolute;
+  left: 5px;
+  background-color: #f9f9f9;
+  min-width:230px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  border-radius: 0px 0px 4px 4px;
+  z-index: 1;
+  margin-top: 13.5px;
+  transition: visibility 0.2s, opacity 2s;
+}
+
+.more-dropdown-content a{
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.more-dropdown-content a:hover{
+  background-color: #DBDBDB;
+}
+
+hr{
+  padding: 0;
+  margin: 0;
+  border-top: grey;
+}
+
+.more-container:hover .more-dropdown-content {
+  visibility: visible;
+}
+
+.dealOfDay_rightImg_container{
+  display: flex;
+  justify-content: space-between;
+}
+
+#deals-of-the-day-div{
+  flex: 90%;
+}
+
+#right-img-container{
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 10px;
+  display: flex;
+  width: 250px;
+  justify-content: center;
+  user-select: none;
+}
+
+@media screen and (max-width: 992px){
+  .search-box-container{
+    width: 260px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .more-container, .cart-container{
+    padding-left: 35px;
   }
+
+  .login-btn-container{
+    padding-left: 50px;
+  }
+  
+}
+
+@media screen and (max-width: 576px){
+  .search-box-container{
+    width: 300px;
+  }
+  
 }

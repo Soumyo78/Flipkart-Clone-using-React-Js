@@ -4,6 +4,7 @@ import Navbar from './Components/Navbar/script';
 import TopImageSlide from './Components/Top_Image_Slide/script';
 import ImageCard from './Components/Image_Card_Container/script';
 import Items from './Components/Items_Container/script';
+import Footer from './Components/Footer_Container/script';
 
 
 
@@ -124,6 +125,13 @@ import mustHaveForGamersPic12 from './Resources/Must_haves_for_all_gamers/must-h
 // Importing other Resources
 import forANewBeginingPic1 from './Resources/For_A_New_Begining_Pic1.png';
 
+function rotate(){
+  document.getElementById('arrow').className = "rotate";
+}
+
+function reverseRotate(){
+  document.getElementById('arrow').className = "rev-rotate";
+}
 
 function App() {
   return (
@@ -156,8 +164,8 @@ function App() {
                 <a className="a-list-items" href="#gift-cards"><img style={{paddingRight: "15px"}} src={giftcardIcon} alt="" width="17px" height="14px"/>Gift Cards</a>
               </div>
             </div>
-            <div className="more-container"><a className="more-text" id="more-text" href="#more">More<span id="more-arrow">∨</span></a>
-              <div id="moreDropdown" class="more-dropdown-content">
+            <div className="more-container" onMouseOver={rotate} onMouseOut={reverseRotate}><a className="more-text" id="more-text" href="#more">More<span id="arrow" className="moreArrow">∨</span></a>
+              <div id="moreDropdown" className="more-dropdown-content">
                 <a href="#notification-preference"><img style={{paddingRight: "15px"}} src={notificationBell} alt="" width="14px" height="16px"/>Notification Preference</a>
                 <hr/>
                 <a href="#sell-on-flipkart"><img style={{paddingRight: "15px"}} src={briefcase} alt="" width="14px" height="14px"/>Sell on Flipkart</a>
@@ -237,6 +245,14 @@ function App() {
         />
       </div>
 
+
+
+    <Footer
+      sectionTitleList={["about-section", "help-section"]}
+      titleTextList={["ABOUT", "HELP"]}
+      section0itemList={["Contact Us", "About Us"]}
+      section1itemList={["Payments", "Shipping"]}
+    />
 
     </div>
   );

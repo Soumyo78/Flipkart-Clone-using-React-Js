@@ -1,4 +1,6 @@
 /* https://www.w3schools.com/code/tryit.asp?filename=GMFG14053HFP */
+/* https://www.w3schools.com/code/tryit.asp?filename=GMK5QIYITF56 */
+
 
 .main-container{
   display: flex;
@@ -9,6 +11,9 @@
   display: flex;
   background-color: #2874F0;
   justify-content: center;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
 }
 
 #title-logo{
@@ -145,8 +150,13 @@
   font-weight: 600;
 }
 
-.more-text:hover > span{
+.rotate{
   transform: rotate(180deg);
+  transition: visibility 10s, opacity 2s;
+}
+
+.rev-rotate{
+  transform: none;
 }
 
 #cart-icon{

@@ -22,6 +22,7 @@
 .footer-list-section{
     padding-left: 30px;
     padding-right: 30px;
+    width: max-content;
 }
 
 .footer-list-section a{
@@ -49,6 +50,42 @@
 }
 
 .vl {
+    margin-top: 30px;
     border-left: 1px solid grey;
-    height: 200px;
+    height: 180px;
+}
+
+.mail-us-address-container{
+    padding-top: 30px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    line-height: 1.5;
+}
+
+.mail-us-address-container div{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.tel-number{
+    text-decoration: none;
+    color: skyblue;
+}
+
+.footer-items-container{
+    display: flex;
+    padding: 10px;
+    justify-content: space-around;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.footer-items-container div{
+    padding: 10px;
+}
+
+footer > hr{
+    color: rgb(81, 82, 83);
 }

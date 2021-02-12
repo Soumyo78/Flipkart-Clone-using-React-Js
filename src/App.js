@@ -248,10 +248,12 @@ function App() {
 
 
     <Footer
-      sectionTitleList={["about-section", "help-section"]}
-      titleTextList={["ABOUT", "HELP"]}
-      section0itemList={["Contact Us", "About Us"]}
-      section1itemList={["Payments", "Shipping"]}
+      sectionTitleList={["about-section", "help-section", "policy-section", "social-section"]}
+      titleTextList={["ABOUT", "HELP", "POLICY", "SOCIAL"]}
+      section0itemList={["Contact Us", "About Us", "Careers", "Flipkart Stories", "Press", "Flipkart Wholesale"]}
+      section1itemList={["Payments", "Shipping", "Cancellation & Returns", "FAQ", "Report Infringement"]}
+      section2itemList={["Return Policy", "Terms Of Use", "Security", "Privacy", "Sitemap", "EPR Compliance"]}
+      section3itemList={["Facebook", "Twitter", "YouTube"]}
     />
 
     </div>

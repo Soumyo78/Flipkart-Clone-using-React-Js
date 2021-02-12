@@ -24,12 +24,33 @@ class Footer extends React.Component{
                         })}
                     </div>
                     <div class="vl"></div>
-                    <div className="mail-us-address-container"></div>
+                    <div className="mail-us-address-container">
+                        <div className="mail-us-container">
+                            <h3 className="list-title-text">Mail Us:</h3>
+                            Flipkart Internet Private Limited,<br/>
+                            Buildings Alyssa, Begonia & <br/>
+                            Clove Embassy Tech Village, <br/>
+                            Outer Ring Road, Devarabeesanahalli Village,<br/>
+                            Bengaluru, 560103,<br/>
+                            Karnataka, India<br/>
+                        </div>
+                        <div className="address-container">
+                            <h3 className="list-title-text">Registered Office Address:</h3>
+                            Flipkart Internet Private Limited,<br/>
+                            Buildings Alyssa, Begonia &<br/>
+                            Clove Embassy Tech Village,<br/>
+                            Outer Ring Road, Devarabeesanahalli Village,<br/>
+                            Bengaluru, 560103,<br/>
+                            Karnataka, India<br/>
+                            CIN : SAMPLECINNUMBER12345678<br/>
+                            Telephone: <a className="tel-number" href="">1800 XXX XXXX</a><br/>
+                        </div>
+                    </div>
                 </div>
                 <hr/>
                 <div className="footer-items-container">
-                    <div className="footer-items"></div>
-                    <div className="card-img-container"></div>
+                    <div className="footer-items">This is a clone of flipkart's original site. By Soumyo Roy.</div>
+                    <div className="card-img-container">This clone is done for educational purpose only.</div>
                 </div>
             </footer>
         )

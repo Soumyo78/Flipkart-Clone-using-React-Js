@@ -6,8 +6,6 @@ import ImageCard from './Components/Image_Card_Container/script';
 import Items from './Components/Items_Container/script';
 import Footer from './Components/Footer_Container/script';
 
-
-
 // Importing Resources
 import titleLogo from './Resources/site_logos/flipkart-logo-search-bar-plus.png';
 
@@ -122,6 +120,17 @@ import mustHaveForGamersPic10 from './Resources/Must_haves_for_all_gamers/must-h
 import mustHaveForGamersPic11 from './Resources/Must_haves_for_all_gamers/must-haves-for-all-gamers-mousepads.webp';
 import mustHaveForGamersPic12 from './Resources/Must_haves_for_all_gamers/must-haves-for-all-gamers-routers.webp';
 
+// Importing Navbar icons
+import topOffersPic from './Resources/Nav_icon_pics/top-offers.webp';
+import groceryPic from './Resources/Nav_icon_pics/grocery.webp';
+import mobilesPic from './Resources/Nav_icon_pics/mobiles.webp';
+import fashionPic from './Resources/Nav_icon_pics/fashion.webp';
+import electronicsPic from './Resources/Nav_icon_pics/electronics.webp';
+import homePic from './Resources/Nav_icon_pics/home.webp';
+import appliancesPic from './Resources/Nav_icon_pics/appliances.webp';
+import travelPic from './Resources/Nav_icon_pics/travel.webp';
+import beautyToysMorePic from './Resources/Nav_icon_pics/beauty-toys-more.webp';
+
 // Importing other Resources
 import forANewBeginingPic1 from './Resources/For_A_New_Begining_Pic1.png';
 
@@ -148,7 +157,7 @@ function App() {
           <div className="login-more-cart-container">
             <div className="login-btn-container">
               <button id="login-btn">Login</button>
-              <div id="loginDropdown" class="login-dropdown-content">
+              <div id="loginDropdown" className="login-dropdown-content">
                 <div id="new-customer-text">New Customer?<a id="dropdown-sign-up-text" href=""> Sign up</a></div>
                 <hr/>
                 <a className="a-list-items" href="#my-profile"><img style={{paddingRight: "15px"}} src={profileIcon} alt="" width="16px" height="16px"/>My Profile</a>
@@ -181,7 +190,7 @@ function App() {
           </div>
         </div>
       </div>
-      <Navbar idList={["electronics-link", "tvs-&-appliances-link", "men-link", "women-link", "baby-&-kids-link", "home-&-furniture-link", "sports-books-&-more-link", "flights-link", "offer-zone-link"]} hrefList={["#electronics", "#tvs-&-appliances", "#men", "#women", "#baby-&-kids", "#home-&-furniture", "#sports-books-&-more", "#flights", "#offer-zone"]} navMenuList={["Electronics", "TVs & Appliances", "Men", "Women", "Baby & Kids", "Home & Furniture", "Sports, Books & More", "Flights", "Offer Zone"]}/>
+      <Navbar idList={["top-offers-link", "grocery-link", "mobiles-link", "fashion-link", "electronics-link", "home-link", "appliances-link", "travel-link", "beauty-toys-more-link"]} hrefList={["#top-offers", "#grocery", "#mobiles", "#fashion", "#electronics", "#home", "#appliances", "#travel", "#beauty-toys-more"]} navPicList={[topOffersPic, groceryPic, mobilesPic, fashionPic, electronicsPic, homePic, appliancesPic, travelPic, beautyToysMorePic]} navMenuList={["Top Offers", "Grocery", "Mobiles", "Fashion", "Electronics", "Home", "Appliances", "Travel", "Beauty, Toys & More"]}/>
       <div className="content-body-container">
         <TopImageSlide/>
         <div className="dealOfDay_rightImg_container">

@@ -6,7 +6,14 @@ class Navbar extends React.Component{
         return(
             <nav className="nav-list">
                 {this.props.navMenuList.map((item, index)=>{
-                    return <li><a id={this.props.idList[index]} href={this.props.hrefList[index]}>{item}</a></li>
+                    return <li>
+                        <a id={this.props.idList[index]} href={this.props.hrefList[index]}>
+                            <div className="nav-icon-text-container">
+                                <img className="nav-bar-pic" src={this.props.navPicList[index]} alt={item} />
+                                <h5>{item}</h5>
+                            </div>
+                        </a>
+                    </li>
                 })}
             </nav>
         )

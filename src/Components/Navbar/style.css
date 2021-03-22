@@ -14,14 +14,28 @@
     display: block;
     color: black;
     text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
-    font-size: 14px;
     font-weight: 500;
+}
+
+.nav-icon-text-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 0;
+}
+
+.nav-bar-pic{
+    padding-top: 10px;
 }
 
 .nav-list li a:hover{
     color: #2874F0;
+}
+
+.nav-bar-pic{
+    width: 64px;
+    height: 64px;
 }
 
 
